@@ -66,6 +66,10 @@
      */
     _addClassIfHasLabel(labelStr) {
       return (typeof labelStr === 'string' && labelStr.length) ? 'app-nav-item__icon--with-label' : '';
+    },
+
+    _addAdditionalClassesForIcon(item) {
+      return (typeof item !== 'undefined' && typeof item.iconClasses === 'string' && item.iconClasses.length) ? item.iconClasses : '';
     }
   });
 })();

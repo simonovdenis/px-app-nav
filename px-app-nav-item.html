@@ -9,7 +9,7 @@
     <style include="px-app-nav-item-styles"></style>
 
     <template is="dom-if" if="{{_propIsTypeOf(icon, 'string')}}">
-      <px-icon class$="app-nav-item__icon {{_addClassIfHasLabel(label)}}" icon="{{icon}}"></px-icon>
+      <px-icon class$="app-nav-item__icon {{_addClassIfHasLabel(label)}} {{_addAdditionalClassesForIcon(item)}}" icon="{{icon}}"></px-icon>
     </template>
 
     <template is="dom-if" if="{{emptyIcon}}">
